@@ -14,6 +14,7 @@ java_plugin(
     deps = [
         "@org_projectlombok_lombok//jar",
     ],
+    generates_api = 1,
 )
 
 java_library(
