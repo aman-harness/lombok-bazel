@@ -31,6 +31,9 @@ java_library(
     deps = [
         ":a",
     ],
+    plugins = [
+        ":lombok_plugin",
+    ],
 )
 
 # this works
