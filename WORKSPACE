@@ -32,3 +32,4 @@ http_jar(
     name = "lombok_jar",
     url = "https://projectlombok.org/lombok-edge.jar",
     sha256 = "f0ce4526629022fc9c53b6f02a61457bb07b28315b4fc3cce1ca5de06e1446c1",
+)

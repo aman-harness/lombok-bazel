@@ -3,6 +3,5 @@ import lombok.Getter;
 
 @AllArgsConstructor
 public class A {
-    @Getter
-    private final int a;
+    @Getter private final int a;
 }

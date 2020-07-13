@@ -22,25 +22,23 @@ java_library(
     name = "a",
     srcs = ["A.java"],
     deps = [
-        "//:maven_deps",
-        "@maven//:org_slf4j_slf4j_api",
         ":lombok",
     ],
 )
 
 
-## this fails to compile
-#java_library(
-#    name = "b1",
-#    srcs = ["B.java"],
-#    deps = [
-#        ":a",
-#    ],
-#    plugins = [
-#        ":lombok_plugin",
-#    ],
-#)
-#
+# this fails to compile
+java_library(
+    name = "b1",
+    srcs = ["B.java"],
+    deps = [
+        ":a",
+    ],
+    plugins = [
+        ":lombok_plugin",
+    ],
+)
+
 
 # this compiles successfully
 java_library(
